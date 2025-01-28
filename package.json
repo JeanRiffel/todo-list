@@ -3,7 +3,10 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "npx hardhat test",
+    "compile": "npx hardhat compile",
+    "deploy:ganache": "npx hardhat run scripts/deploy.js --network ganache",
+    "console:ganache": "npx hardhat console --network ganache"
   },
   "keywords": [],
   "author": "",
